@@ -5,6 +5,11 @@
     "file": "posts/deadlock.md"
   },
   {
+    "title": "manjaro笔记",
+    "time": "2019-12-09",
+    "file": "posts/manjaro-note.md"
+  },
+  {
     "title": "爬取文章https://www.cyone.com.cn/Article/ruhechuangye/",
     "time": "2020-04-20",
     "file": "posts/crawl-cyone-ruhechuangye.md"
