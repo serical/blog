@@ -44,7 +44,7 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
-### 搜狗输入法有问题解决方法 [https://blog.csdn.net/kfeng632/article/details/90513211](https://blog.csdn.net/kfeng632/article/details/90513211)
+### [搜狗输入法有问题解决方法](https://blog.csdn.net/kfeng632/article/details/90513211)
 ```bash
 sogou-qimpanel: error while loading shared libraries: libfcitx-qt.so.0: cannot open shared object file: No such file or directory
 
