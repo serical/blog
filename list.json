@@ -18,5 +18,10 @@
     "title": "设计模式7大设计原则",
     "time": "2020-05-25",
     "file": "posts/gof-desc.md"
+  },
+  {
+    "title": "单例模式",
+    "time": "2020-05-28",
+    "file": "posts/singleton.md"
   }
 ]
