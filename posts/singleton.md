@@ -174,7 +174,7 @@ enum Singleton {
 }
 ```
 
-### jdk中的应用
+### JDK中的应用
 
 ```java
 public class Runtime {

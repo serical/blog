@@ -174,3 +174,12 @@ class StepBuilder implements Step1, Step2, Step3, BuildStep {
 }
 ```
 
+### JDK中的应用
+
+java.lang.StringBuilder
+
+`java.lang.Appendable`为`抽象建造者`
+
+`java.lang.AbstractStringBuilder`为`具体建造者`
+
+`java.lang.StringBuilder`为`指挥者`
