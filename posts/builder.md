@@ -76,7 +76,12 @@ public class App {
 
     public static void main(String[] args) {
         // 存在调用顺序, 只能按照step1, step2, step3顺序执行
-        final Character character = Character.builder().withStep1("step1").withStep2("step2").withStep3("step3").noMoreStep().build();
+        final Character character = Character.builder()
+                .withStep1("step1")
+                .withStep2("step2")
+                .withStep3("step3")
+                .noMoreStep()
+                .build();
         System.out.println(character);
     }
 }
