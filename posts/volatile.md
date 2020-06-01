@@ -125,7 +125,7 @@ class Data {
 
 ### 单例模式中的volatile
 
-**instance = new Singleton(); 可以分为下面三个步骤: **
+**instance = new Singleton(); 可以分为下面三个步骤:** 
 
 ```bash
 memory=allocate(); // 1.分配对象内存空间
