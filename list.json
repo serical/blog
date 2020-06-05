@@ -25,6 +25,11 @@
     "file": "posts/cas.md"
   },
   {
+    "title": "集合并发异常及解决",
+    "time": "2019-02-15",
+    "file": "posts/collect-concurrent.md"
+  },
+  {
     "title": "设计模式7大设计原则",
     "time": "2020-05-25",
     "file": "posts/gof-desc.md"
@@ -53,5 +58,10 @@
     "title": "类适配器模式",
     "time": "2020-05-30",
     "file": "posts/adapter.md"
+  },
+  {
+    "title": "API修改端口",
+    "time": "2020-06-05",
+    "file": "posts/change-port.md"
   }
 ]
