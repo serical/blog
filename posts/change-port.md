@@ -21,7 +21,7 @@ import (
 const configPath = "/etc/v2ray/config.json"
 const restartCommand = "systemctl restart v2ray"
 
-const configTemplate = `
+const configTemplate = "
 {
   "inbounds": [{
     "port": {{.}},
@@ -56,7 +56,7 @@ const configTemplate = `
 }
 
 
-`
+"
 
 func main() {
 	r := gin.Default()
