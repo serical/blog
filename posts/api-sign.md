@@ -67,7 +67,7 @@ a=aaa&appId=Vl5gbYRrQ8IDbAEpX2jviVy2Yy84&b=1&nonceStr=prni9m312nenw5i0d3tr9t1j77
 CA401D1FBD5F514E80763ACD046A8AA9F1E465149BE9705EEF2C599AEE5B3AFB
 ```
 
-**本次请求最终参数为: **
+**本次请求最终参数为:**
 
 `公共参数`+`接口参数`+`参数签名`
 
@@ -83,7 +83,7 @@ CA401D1FBD5F514E80763ACD046A8AA9F1E465149BE9705EEF2C599AEE5B3AFB
 }
 ```
 
-**CURL请求例子为: **
+**CURL请求例子为:**
 
 ```bash
 curl --location --request GET 'localhost:8080/api/v1/file/testSign' \
