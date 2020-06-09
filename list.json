@@ -30,6 +30,11 @@
     "file": "posts/collect-concurrent.md"
   },
   {
+    "title": "MySQL索引",
+    "time": "2019-03-01",
+    "file": "posts/bplus-tree.md"
+  },
+  {
     "title": "设计模式7大设计原则",
     "time": "2020-05-25",
     "file": "posts/gof-desc.md"
