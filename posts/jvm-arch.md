@@ -128,8 +128,9 @@ null
 
   * 主要控制新生代需要经历多少次GC晋升到老年代, 最大值是15
 
-  * > [Java HotSpot VM](https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html)
-    > Sets the maximum tenuring threshold for use in adaptive GC sizing. The current largest value is 15. The default value is 15 for the parallel collector and is 4 for CMS.
+  * > Sets the maximum tenuring threshold for use in adaptive GC sizing. The current largest value is 15. The default value is 15 for the parallel collector and is 4 for CMS.
+
+  * [Java HotSpot VM](https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html)
 
 * -XX:TargetSurvivorRatio=50
 
