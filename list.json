@@ -35,6 +35,11 @@
     "file": "posts/bplus-tree.md"
   },
   {
+    "title": "生产者-消费者模式",
+    "time": "2019-03-02",
+    "file": "posts/producer-consumer.md"
+  },
+  {
     "title": "设计模式7大设计原则",
     "time": "2019-05-25",
     "file": "posts/gof-desc.md"
