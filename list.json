@@ -36,22 +36,22 @@
   },
   {
     "title": "设计模式7大设计原则",
-    "time": "2020-05-25",
+    "time": "2019-05-25",
     "file": "posts/gof-desc.md"
   },
   {
     "title": "单例模式",
-    "time": "2020-05-28",
+    "time": "2019-05-28",
     "file": "posts/singleton.md"
   },
   {
     "title": "工厂模式",
-    "time": "2020-05-29",
+    "time": "2019-05-29",
     "file": "posts/factory.md"
   },
   {
     "title": "原型模式",
-    "time": "2020-05-29",
+    "time": "2019-05-29",
     "file": "posts/prototype.md"
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "title": "类适配器模式",
-    "time": "2020-05-30",
+    "time": "2019-05-30",
     "file": "posts/adapter.md"
   },
   {
