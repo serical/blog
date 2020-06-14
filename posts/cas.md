@@ -244,3 +244,52 @@ Thread[t1,5,main]	第2次版本号: 2	101
 Thread[t1,5,main]	第3次版本号: 3	100
 Thread[t2,5,main]	false	100
 ```
+
+
+
+### 手写一个自旋锁
+
+```java
+public class App2 {
+
+    public static void main(String[] args) throws InterruptedException {
+        final SpinLock lock = new SpinLock();
+
+        final Data data = new Data();
+
+        CountDownLatch latch = new CountDownLatch(20);
+        for (int i = 0; i < 20; i++) {
+            new Thread(() -> {
+                lock.lock();
+                for (int j = 0; j < 10000; j++) {
+                    data.count++;
+                }
+                latch.countDown();
+                lock.unLock();
+            }).start();
+        }
+
+        latch.await();
+        System.out.println(data.count);
+    }
+}
+
+class Data {
+    int count;
+}
+
+class SpinLock {
+    private AtomicReference<Thread> atomicReference = new AtomicReference<>();
+
+    public void lock() {
+        final Thread thread = Thread.currentThread();
+        while (!atomicReference.compareAndSet(null, thread)) {
+        }
+    }
+
+    public void unLock() {
+        atomicReference.compareAndSet(Thread.currentThread(), null);
+    }
+}
+```
+
