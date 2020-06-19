@@ -5,6 +5,11 @@
     "file": "posts/single-link.md"
   },
   {
+    "title": "双链表常用操作",
+    "time": "2017-03-02",
+    "file": "posts/doubly-link.md"
+  },
+  {
     "title": "Manjaro笔记",
     "time": "2018-12-09",
     "file": "posts/manjaro-note.md"
