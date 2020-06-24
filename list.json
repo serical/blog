@@ -15,6 +15,11 @@
     "file": "posts/josephus.md"
   },
   {
+    "title": "归并排序",
+    "time": "2017-03-05",
+    "file": "posts/merge-sort.md"
+  },
+  {
     "title": "Manjaro笔记",
     "time": "2018-12-09",
     "file": "posts/manjaro-note.md"
