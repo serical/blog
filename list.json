@@ -123,5 +123,10 @@
     "title": "公共接口参数签名实现",
     "time": "2020-06-07",
     "file": "posts/api-sign.md"
+  },
+  {
+    "title": "Homebrew安装shell",
+    "time": "2020-07-10",
+    "file": "posts/homebrew-install.md"
   }
 ]
