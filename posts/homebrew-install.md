@@ -1,4 +1,4 @@
-```shell
+```sh
 #HomeBrew自动安装脚本
 #cunkai.wang@foxmail.com
 #路径表.
