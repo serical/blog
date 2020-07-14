@@ -25,6 +25,11 @@
     "file": "posts/merge-sort.md"
   },
   {
+    "title": "对象属性排序",
+    "time": "2017-03-06",
+    "file": "posts/object-sort.md"
+  },
+  {
     "title": "Manjaro笔记",
     "time": "2018-12-09",
     "file": "posts/manjaro-note.md"

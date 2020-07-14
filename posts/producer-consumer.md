@@ -382,3 +382,71 @@ class Data {
 
 
 
+### 数组当做容器
+
+```java
+public class Test {
+
+    public static void main(String[] args) {
+        final Container container = new Container();
+        for (int i = 0; i < 5; i++) {
+            new Thread(() -> {
+                for (; ; ) {
+                    try {
+                        container.add(new Object());
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }, "producer" + i).start();
+        }
+
+        for (int i = 0; i < 8; i++) {
+            new Thread(() -> {
+                for (; ; ) {
+                    try {
+                        container.get();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }, "consumer" + i).start();
+        }
+    }
+}
+
+class Container {
+    Object[] container = new Object[100];
+    int index;
+
+    public synchronized void add(Object o) throws InterruptedException {
+        while (index == container.length) {
+            this.wait();
+        }
+
+        container[index++] = o;
+        System.out.println(Thread.currentThread() + "生产者生产一个对象, 当前容量为: " + length());
+        TimeUnit.MILLISECONDS.sleep(100);
+
+        this.notifyAll();
+    }
+
+    public synchronized void get() throws InterruptedException {
+        while (index == 0) {
+            this.wait();
+        }
+
+        final Object o = container[--index];
+        System.out.println(Thread.currentThread() + "消费者完成一次消费, 当前容量为: " + length() + " 对象为: " + o);
+        container[index] = null;
+        TimeUnit.MILLISECONDS.sleep(100);
+
+        this.notifyAll();
+    }
+
+    public int length() {
+        return index;
+    }
+}
+```
+
